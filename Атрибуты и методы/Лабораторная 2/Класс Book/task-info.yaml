@@ -1,0 +1,30 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 188
+        length: 26
+        placeholder_text: '# TODO написать класс Book'
+        initial_state:
+          length: 26
+          offset: 188
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          class Book:
+              ...
+        selected: false
+        status: Solved
+        is_visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 25 Jun 2024 09:49:43 UTC"
+record: -1

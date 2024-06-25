@@ -1,0 +1,60 @@
+type: theory
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 144
+        length: 44
+        placeholder_text: "...  # TODO инициализировать объект \"Стакан\""
+        initial_state:
+          length: 44
+          offset: 144
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if not isinstance(capacity_volume, (int, float)):
+                      raise TypeError
+                  if not capacity_volume > 0:
+                      raise ValueError
+                  self.capacity_volume = capacity_volume  # объем стакана
+          
+                  if not isinstance(occupied_volume, (int, float)):
+                      raise TypeError
+                  if occupied_volume < 0:
+                      raise ValueError
+                  self.occupied_volume = occupied_volume  # объем жидкости в стакане
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 1175
+        length: 51
+        placeholder_text: "...  # TODO инициализировать два объекта типа Glass"
+        initial_state:
+          length: 51
+          offset: 222
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          glass1 = Glass(200, 100)  # экземпляр класса
+              glass2 = Glass(500, 50)  # экземпляр класса
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 1232
+        length: 57
+        placeholder_text: '# TODO попробовать инициализировать не корректные объекты'
+        initial_state:
+          length: 57
+          offset: 279
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          incorrect_capacity_volume_type = ...
+              incorrect_occupied_volume_value = ...
+        selected: false
+        status: Solved
+        is_visible: false
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

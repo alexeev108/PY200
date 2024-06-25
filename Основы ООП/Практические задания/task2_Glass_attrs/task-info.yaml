@@ -1,0 +1,57 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 1719
+        length: 44
+        placeholder_text: "...  # TODO инициализировать ещё один стакан"
+        initial_state:
+          length: 44
+          offset: 724
+        initialized_from_dependency: false
+        encrypted_possible_answer: "Glass(500, 50)  # экземпляр класса"
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 1774
+        length: 51
+        placeholder_text: "...)  # TODO распечатать атрибуты экземпляра glass2"
+        initial_state:
+          length: 51
+          offset: 779
+        initialized_from_dependency: false
+        encrypted_possible_answer: "glass2.capacity_volume, glass2.occupied_volume)"
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 1877
+        length: 37
+        placeholder_text: '#  TODO доливаем воды в первый стакан'
+        initial_state:
+          length: 37
+          offset: 882
+        initialized_from_dependency: false
+        encrypted_possible_answer: glass1.occupied_volume += 100
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 2036
+        length: 28
+        placeholder_text: '#  TODO сравнить id объектов'
+        initial_state:
+          length: 28
+          offset: 1041
+        initialized_from_dependency: false
+        encrypted_possible_answer: "print(glass1 is glass2)  # проверяем, что это два\
+      \ разных объекта"
+        selected: false
+        status: Solved
+        is_visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

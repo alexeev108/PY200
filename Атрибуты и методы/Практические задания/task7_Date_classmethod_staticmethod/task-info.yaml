@@ -1,0 +1,46 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 525
+        length: 103
+        placeholder_text: "...  # TODO реализовать метод"
+        initial_state:
+          length: 29
+          offset: 513
+        initialized_from_dependency: false
+        encrypted_possible_answer: '...'
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 946
+        length: 100
+        placeholder_text: "...  # TODO используя атрибут класса DAY_OF_MONTH вернуть к\
+      оличество дней в запрашиваемом месяце и году"
+        initial_state:
+          length: 103
+          offset: 685
+        initialized_from_dependency: false
+        encrypted_possible_answer: '...'
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 1171
+        length: 791
+        placeholder_text: "...  # TODO проверить валидность даты"
+        initial_state:
+          length: 37
+          offset: 913
+        initialized_from_dependency: false
+        encrypted_possible_answer: '...'
+        selected: false
+        status: Solved
+        is_visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true
