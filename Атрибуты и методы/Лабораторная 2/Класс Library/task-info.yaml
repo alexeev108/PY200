@@ -29,7 +29,7 @@ files:
         status: Solved
         is_visible: false
       - offset: 1011
-        length: 941
+        length: 995
         placeholder_text: '# TODO написать класс Library'
         initial_state:
           length: 29

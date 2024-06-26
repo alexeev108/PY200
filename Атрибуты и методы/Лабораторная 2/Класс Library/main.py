@@ -52,7 +52,8 @@ class Library:
         if len(self.books) == 0:
             return 1
         else:
-            return self.books[-1].id_ + 1
+            max_item = max(self.books, key=lambda x: x.id_)
+            return max_item.id_ + 1
 
     def get_index_by_book_id(self, id_: int):
         if not isinstance(id_, int):
@@ -87,4 +88,4 @@ if __name__ == '__main__':
 
     print(library_with_books.get_next_book_id())  # проверяем следующий id для непустой библиотеки
     #
-    print(library_with_books.get_index_by_book_id(1))  # проверяем индекс книги с id = 1
+    print(library_with_books.get_index_by_book_id(3))  # проверяем индекс книги с id = 1
