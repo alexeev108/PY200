@@ -20,26 +20,19 @@ class Book:
     def __repr__(self):
         return f"{self.__class__.__name__}(name={self.__name!r}, author={self.__author!r})"
 
-    @property
-    def name(self):
-        return self.__name
-
-    @name.setter
-    def name(self, name):
-        self.__name = name
-
-    @property
-    def author(self):
-        return self.__author
-
-    @author.setter
-    def author(self, author):
-        self.__author = author
 
 class PaperBook(Book):
     def __init__(self, name: str, author: str, pages: int):
         super().__init__(name, author)
         self.pages = self.get_valid_pages(pages)
+
+    @property
+    def pages(self):
+        return self._pages
+
+    @pages.setter
+    def pages(self, duration):
+        self._pages = self.get_valid_pages(duration)
 
     def get_valid_pages(self, pages):
         if not isinstance(pages, int):
