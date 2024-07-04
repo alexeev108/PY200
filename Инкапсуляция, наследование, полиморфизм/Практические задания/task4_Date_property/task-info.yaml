@@ -3,7 +3,7 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 424
+      - offset: 1595
         length: 88
         placeholder_text: |-
           # TODO какой декоратор следует применить?
@@ -16,8 +16,9 @@ files:
           @staticmethod
               def is_leap_year(year: int) -> bool:
         selected: false
-        status: Unchecked
-      - offset: 573
+        status: Solved
+        is_visible: false
+      - offset: 1744
         length: 54
         placeholder_text: "...  # TODO записать условие проверки високосного года"
         initial_state:
@@ -28,8 +29,9 @@ files:
           leap_condition = ((year % 4) == 0 and (year % 100) != 0) or ((year % 400) == 0)
                   return leap_condition
         selected: false
-        status: Unchecked
-      - offset: 777
+        status: Solved
+        is_visible: false
+      - offset: 1948
         length: 53
         placeholder_text: "...  # TODO вернуть количество дней указанного месяца"
         initial_state:
@@ -42,8 +44,9 @@ files:
           
                   return year_months[month-1]
         selected: false
-        status: Unchecked
-      - offset: 963
+        status: Solved
+        is_visible: false
+      - offset: 2134
         length: 88
         placeholder_text: "...  # TODO если указанный набор день, месяц и год неверны\
       , то вызвать ошибку ValueError"
@@ -55,8 +58,9 @@ files:
           if day > self.get_max_day(month, year):
                       raise ValueError
         selected: false
-        status: Unchecked
-      - offset: 1057
+        status: Solved
+        is_visible: false
+      - offset: 2228
         length: 39
         placeholder_text: '# TODO записать getter и setter для дня'
         initial_state:
@@ -76,8 +80,9 @@ files:
                       raise ValueError
                   self._day = day
         selected: false
-        status: Unchecked
-      - offset: 1102
+        status: Solved
+        is_visible: false
+      - offset: 2273
         length: 42
         placeholder_text: '# TODO записать getter и setter для месяца'
         initial_state:
@@ -97,8 +102,9 @@ files:
                       raise ValueError
                   self._month = month
         selected: false
-        status: Unchecked
-      - offset: 1150
+        status: Solved
+        is_visible: false
+      - offset: 2321
         length: 40
         placeholder_text: '# TODO записать getter и setter для года'
         initial_state:
@@ -118,11 +124,12 @@ files:
                       raise ValueError
                   self._year = year
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: __init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

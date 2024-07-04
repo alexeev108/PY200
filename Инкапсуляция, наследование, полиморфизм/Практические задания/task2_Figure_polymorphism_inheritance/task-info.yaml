@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 238
-        length: 59
+        length: 488
         placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
         initial_state:
           length: 59
@@ -19,9 +19,10 @@ files:
                   print(f"Вызван метод класса {self.__class__.__name__}")
                   return self.a * self.b
         selected: false
-        status: Unchecked
-      - offset: 364
-        length: 59
+        status: Solved
+        is_visible: false
+      - offset: 793
+        length: 373
         placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
         initial_state:
           length: 59
@@ -35,7 +36,8 @@ files:
                   print(f"Вызван метод класса {self.__class__.__name__}")
                   return math.pi * self.r ** 2
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: __init__.py
     visible: false
@@ -43,5 +45,8 @@ files:
   - name: tests/output.txt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Jul 2024 19:40:46 UTC"
 record: -1
